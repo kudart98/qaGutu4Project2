@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
+group 'com.qa-guru4'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -10,8 +10,12 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'com.codeborne:selenide:5.17.3'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
 }
 
 test {
