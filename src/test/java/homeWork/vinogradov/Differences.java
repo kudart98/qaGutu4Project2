@@ -1,4 +1,4 @@
-package homeWork;
+package homeWork.vinogradov;
 
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
